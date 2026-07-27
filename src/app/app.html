@@ -26,6 +26,14 @@
       <li>No hay tareas. Agrega una!!</li>
     }
   </ul>
+
+  <button
+    class="limpiar"
+    (click)="store.limpiarCompletadas()"
+    [disabled]="store.completadas() === 0"
+  >
+    Limpiar completadas ({{ store.completadas() }})
+  </button>
 </main>
 
 <router-outlet />

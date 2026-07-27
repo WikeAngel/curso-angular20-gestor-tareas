@@ -66,6 +66,22 @@ li:hover {
   margin-left: auto;
 }
 
+.limpiar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d81b60;
+  border-radius: 6px;
+  background: white;
+  color: #d81b60;
+  cursor: pointer;
+}
+
+.limpiar:disabled {
+  border-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
 .vacio {
   cursor: default;
   color: #999;
