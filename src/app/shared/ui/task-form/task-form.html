@@ -1,0 +1,7 @@
+<input
+  type="text"
+  #inputTarea
+  placeholder="Nueva Tarea"
+  (keyup.enter)="agregar.emit(inputTarea.value); inputTarea.value = ''"
+/>
+<button class="agregar" (click)="agregar.emit(inputTarea.value); inputTarea.value = ''">Agregar</button>
